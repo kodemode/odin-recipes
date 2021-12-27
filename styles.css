@@ -1,0 +1,67 @@
+/* INDEX PAGE */
+
+* {
+    text-align: justify;
+}
+
+.avocado {
+    height: 300px;
+    width: auto;
+}
+
+.indexTitle {
+    font-size: 36px;
+    font-family: fantasy;
+    color: rgb(44, 43, 43);
+}
+
+.indexPara,
+.indexList {
+    font-family: monaco, monospace;
+}
+
+.indexPara {
+    color: rgb(93, 124, 49);
+}
+
+.indexList {
+    font-size: 12px;
+    color: rgb(155, 175, 118);
+}
+
+/* CURRY PAGE */
+
+* {
+    text-align: justify;
+}
+
+.curryTitle {
+    font-family: fantasy;
+    font-size: 36px;
+    color: rgb(44, 43, 43);
+}
+
+.curryCredits {
+    font-size: 9px;
+    font-family: monospace;
+    color: gray;
+}
+
+.curry {
+    width: 400px;
+    height: auto;
+}
+
+.subtitleOne, .paraOne {
+    font-family: monaco;
+    color: rgb(109, 93, 65);
+}
+
+.subtitleOne {
+    font-size: 18px;
+}
+
+.paraOne {
+    font-size: 12px;
+}
+
