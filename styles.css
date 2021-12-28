@@ -1,67 +1,126 @@
-/* INDEX PAGE */
+/*---------INDEX PAGE---------*/
+
 
 * {
+    width: 900px;
     text-align: justify;
 }
 
-.avocado {
+
+h1 {
+    font-size: 36px;
+    font-family: fantasy;
+    color: rgb(44, 43, 43);
+}
+
+#avocadoImg {
     height: 300px;
     width: auto;
 }
 
-.indexTitle {
-    font-size: 36px;
-    font-family: fantasy;
-    color: rgb(44, 43, 43);
-}
 
-.indexPara,
-.indexList {
+h3,
+ul,
+ol,
+.cakeSub {
     font-family: monaco, monospace;
 }
 
-.indexPara {
+/* This rule also concerns cheesecake recipe page. ^ */ 
+
+h3 {
     color: rgb(93, 124, 49);
 }
 
-.indexList {
+ul,
+ol {
     font-size: 12px;
     color: rgb(155, 175, 118);
 }
 
-/* CURRY PAGE */
 
-* {
-    text-align: justify;
+
+
+/*---------CURRY PAGE---------*/
+
+#recipeTitle {
+    text-align: center;
 }
 
-.curryTitle {
-    font-family: fantasy;
-    font-size: 36px;
-    color: rgb(44, 43, 43);
+#curryImg1 {
+    width: 430px;
+    height: 457px;
 }
 
-.curryCredits {
+#curryImg2 {
+    width: 464px;
+    height: 457px;
+}
+
+h2,
+.description,
+.description p {
+    text-align: center;
+}
+
+/* This rule also concerns iced latte page. ^ / NOTE: I previously used the universal selector to apply text-align:justify to every single element in the HTML, 
+and then added a "description" class to certain elements to make them center-aligned. In the case above, rather than directly targetting the two paragraphs with the "description" class, 
+I put them both within a "div" to which I added the "description" class. As the paragraphs did not directly have a class selector (only through div), they still got the "justify" alignment 
+applied to them, while div got the "center" alignment. The solution to this was using a Descendant Combinator to link ".description" (the ancestor, div's class) 
+to the "p" elements inside (child). This was done by adding a space between the two selectors. */
+
+
+.description {
+    font-size: 13px;
+    color: rgb(155, 175, 118);
+    font-family: Futura, sans-serif;
+}
+
+.recipeH3 {
+    color: rgb(80, 79, 79);
+    background-color: rgb(228, 226, 226);
+    text-align: center;
+}
+
+.recipeList {
+    color: rgb(126, 124, 124);
+}
+
+
+.recipeCred, 
+.backtomain {
     font-size: 9px;
     font-family: monospace;
     color: gray;
 }
 
-.curry {
-    width: 400px;
+
+
+/*---------COFFEE PAGE---------*/
+
+#latteImg {
     height: auto;
+    width: 442px;
 }
 
-.subtitleOne, .paraOne {
-    font-family: monaco;
-    color: rgb(109, 93, 65);
+#latteMeme {
+    height: 300px;
+    width: 450px;
 }
 
-.subtitleOne {
-    font-size: 18px;
+
+
+/*---------CAKE PAGE---------*/
+
+#cakeImg {
+    height: 445px;
+    width: auto;
 }
 
-.paraOne {
+.cakeSub {
     font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(80, 79, 79);
 }
 
